@@ -1,0 +1,738 @@
+﻿
+@{
+    ViewBag.Title = "Register Campaign Code";
+}
+
+ <style>
+
+     .autocomplete-suggestions {
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         border: 1px solid #999;
+         background: #FFF;
+         cursor: default;
+         overflow: auto;
+         -webkit-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+         -moz-box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+         box-shadow: 1px 4px 3px rgba(50, 50, 50, 0.64);
+     }
+
+     .autocomplete-suggestion {
+         padding: 2px 5px;
+         white-space: nowrap;
+         overflow: hidden;
+     }
+
+     .autocomplete-no-suggestion {
+         padding: 2px 5px;
+     }
+
+     .autocomplete-selected {
+         background: /*#F0F0F0*/ #0844cf;
+     }
+
+     .autocomplete-suggestions strong {
+         font-weight: bold;
+         color: #000;
+     }
+
+     .autocomplete-group {
+         padding: 2px 5px;
+         font-weight: bold;
+         font-size: 16px;
+         color: #000;
+         display: block;
+         border-bottom: 1px solid #000;
+     }
+
+ </style>
+<nav style="--bs-breadcrumb-divider: '>>';" aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            Home
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            Register Campaign Code
+        </li>
+    </ol>
+</nav>
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+
+        <div class="container-fluid">
+
+            <h1 class="h6" style="color:black">Register Campaign Code</h1>
+
+            <!-- Page Heading -->
+            <!-- Content Row -->
+
+
+
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+
+                <!-- Area Chart -->
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Search Camapign</h6>
+                    </div>
+                    <div class="card-body">
+
+
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2" style="color:black;text-align:left">
+                                CampaignCode:
+                            </div>
+                                <div class="col-md-4 col-sm-4" style="color:black;text-align:left">
+                              
+                                <input class="form-control" id="txtcampaigncode" style="color:black" type="text" placeholder="Campaign Code" aria-label=".form-control-sm example">
+                                 </div> 
+                           
+                            
+                            <div class="col-md-1 col-sm-1">
+
+                            </div>
+                            <div class="col-md-1 col-sm-1" style="color:black;text-align:left">
+
+
+                                Status:
+
+
+
+                            </div>
+                            <div class="col-md-3 col-sm-3" style="text-align:left">
+                                @*<input class="form-control form-control-sm" id="status" type="text" placeholder="Status" aria-label=".form-control-sm example">*@
+                                <select id="ddlStatus" class="form-control" data-live-search="true"></select>
+                            </div>
+
+                        </div>
+
+                        <div class="clearfix">
+
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3"></div>
+                            <div class="col-md-3 col-sm-3" style="text-align:right;">
+                                <a href="#" id="btn" class="btn btn-primary" onclick="inittbSearchResult();">
+                                    <span class="icon text-white-50">
+                                        @*<i class="fas fa-search"></i>*@
+                                    </span>
+                                    <span class="text">ค้นหา</span>
+                                </a>
+                            </div>
+                            <div class="col-md-1 col-sm-1">
+
+                            </div>
+                            <div class="col-md-5 col-sm-5" style="text-align:left">
+                                <a href="#" class="btn btn-danger">
+                                    <span class="icon text-white-50">
+                                        @*<i class="fas fa-times"></i>*@
+                                    </span>
+                                    <span class="text">ยกเลิก</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bar Chart -->
+
+
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary"></h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+
+                            <table class="table table-bordered table-hover table-striped table-checkable table-highlight-head mb-4" id="dataCampaignTable" width=100%; cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>CampaignCode</th>
+                                        <th>Description</th>
+                                        <th>Customer</th>
+                                        <th>Type</th>
+                                        <th>Period</th>
+                                        <th>Status</th>
+                                        <th>Remark</th>
+                                    </tr>
+                                </thead>
+
+                          
+                            </table>
+                        </div>
+                        <div class="clearfix">
+                            <br />
+                        </div>
+
+
+
+
+                        @*<div class="row">
+                                <div class="col-sm-3 col-md-3">
+                                    <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite" style="color:black;text-align:left">Showing 1 to 10 of 57 entries</div>
+                                </div>
+                                <div class="col-sm-3 col-md-3"></div>
+                                <div class="col-sm-3 col-md-3"></div>
+
+                                <div class="col-sm-3 col-md-3" style="text-align:right">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate">
+                                        <ul class="pagination">
+                                            <li class="paginate_button page-item previous disabled" id="dataTable_previous">
+                                                <a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">&laquo;</a>
+                                            </li>
+                                            <li class="paginate_button page-item active">
+                                                <a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a>
+                                            </li>
+                                            <li class="paginate_button page-item ">
+                                                <a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a>
+                                            </li>
+                                            <li class="paginate_button page-item ">
+                                                <a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a>
+                                            </li>
+                                            <li class="paginate_button page-item next" id="dataTable_next">
+                                                <a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">&raquo;</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>*@
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Logout Modal-->
+    @*<div class="modal fade" style="color:black;"  id="CamdbDetail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="width:900px">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="CamdbModalLabel">Campaign Detail</h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <span> CampaignCode</span>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" id="detailtxtcampaigncode" class="form-control" disabled="disabled" />
+                            </div>
+                            <div class="col-md-3">
+
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <br />
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <span> Period FromTo</span>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <div class="date">
+                                        <div class="input-group input-append date" id="datePicker">
+                                            <input type="text" class="form-control " name="date" placeholder="DD/MM/YYYY" aria-describedby="basic-addon1" />
+
+                                            <span class="input-group-text input-group-addon add-on " id="basic-addon1"><i class="fi-rr-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="form-group">
+                                    <div class="date">
+                                        <div class="input-group input-append date" id="datePicker">
+                                            <input type="text" class="form-control " name="date" placeholder="DD/MM/YYYY" aria-describedby="basic-addon1" />
+
+                                            <span class="input-group-text input-group-addon add-on " id="basic-addon1"><i class="fi-rr-calendar"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <br />
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+
+                            </div>
+                            <div class="col-md-3">
+                                <span> Status</span>
+                            </div>
+                            <div class="col-md-3">
+                                <select id="ddlStatus" class="form-control" data-live-search="true"></select>
+                            </div>
+                        </div>
+                        <div class="row clearfix">
+                            <br />
+                        </div>
+
+                        <div class="row">
+                            <button id="test" class="btn btn-primary" onclick="testalert();"> TestAlert </button>
+
+                            <div class=" row clearfix">
+                                <br />
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>*@
+
+
+
+    <div id="CamdbDetail" class="modal fade" style="color:black" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="container">
+                    <div class="modal-header">
+                        <h5 id="hTitleEdit" class="modal-title">Request Training</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+
+                <form id="frNew" class="needs-validation" novalidate>
+                    <div class="container">
+                        <div class="modal-body">
+
+                            <div class="row mt-4 ml-3 mr-1">
+
+                                <div class=" col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>CampaignCode:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCampaignCode" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Campaign Desc: </label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCampaigndesc" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>CampaignType:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCampaignType" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>CustomerType:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCampaignTypeDesc" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>CustomerType:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCustomerType" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Benefit:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtBenefit" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Status:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_status" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>CampaignType Desc:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtcampaigntypedesc" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>CardType:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCardType" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>ActionType:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtActionType" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>bint:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtBint" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">Request Date:</label>
+                                        </div>
+
+
+
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='RequestDate'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>cru:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCru" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-md-6 mt-4">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Bill:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtBill" class="form-control" />
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                                Closed
+                            </button>
+                            <button id="btnSave" type="submit" @*onclick="RequestTraining()" *@ class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+                                Save
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+@section Scripts {
+
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            console.log("ready!");
+            var oTable;
+
+            inittbSearchResult()
+            GetDropDownStatus();
+            $('#RequestDate').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose:true
+            });
+
+
+
+            $('#txtcampaigncode').autocomplete({
+                lookup: function (query, done) {
+                    $.ajax({
+                        type: "POST",
+                           url: '@Url.Action("LoadCampaignCode", "RegisterCampaign")',
+                        data: { query: query },
+                        dataType: "json",
+                        success: function (data) {
+                          //  console.log(data);
+                            var suggestions = $.map(data.response, function (v) {
+                                return {
+                                    'value': v.campaigncode, 'data': v.campaigncode
+                                };
+                            });
+                            var result = { 'suggestions': suggestions };
+                            done(result);
+
+
+                        },
+                        error: function (xhr, status, error) {
+
+                        }
+                    });
+                },
+                minChars: 1,
+                onSelect: function (suggestion) {
+                    $('#selection').html('You selected: ' + suggestion.value);
+                },
+                showNoSuggestionNotice: true,
+            });
+
+
+        });
+
+        function openModal(campaigncode) {
+          //  alert(campaigncode);
+
+              $.ajax({
+                  url: '@Url.Action("GetDataByCampaignCode", "RegisterCampaign")',
+                  type: 'POST',
+                  data: { 'campaigncode': campaigncode},
+                  dataType: "json",
+                  success: function (data) {
+                      console.log(data)
+                      if (data != null) {
+                          $.each(data, function (id, data) {
+                              //  alert(data.campaigncode);
+                              $("#_txtCampaignCode").val(data.campaigncode);
+                              $("#_txtCampaigndesc").val(data.campaigndesc);
+                              $("#_txtCampaignTypeDesc").val(data.campaigntypedesc);
+                              $("#_txtCampaignType").val(data.campaigntype);
+                              //  $("#_txtCampaignType").val(data.campaigntype);
+                          });
+                      }
+                      else {
+                         
+                          var datanull = "-";
+                          $("#_txtCampaignCode").val(datanull);
+                          $("#_txtCampaigndesc").val(datanull);
+                          $("#_txtCampaignTypeDesc").val(datanull);
+                          $("#_txtCampaignType").val(datanull);
+                      }
+                  },
+                  error: function (result) {
+
+                  }
+
+            });
+
+        }
+
+
+       function GetDropDownStatus() {
+        $.ajax({
+            type: 'Post',
+            url: '@Url.Action("GetStatus","RegisterCampaign")',
+           // data: {stateid:stateid},
+            dataType: 'json',
+            success: function (data) {
+
+                $("#ddlStatus").empty();
+                $("#ddlStatus").append('<option value="-1">--Please All--</option>');
+                $.each(data, function (id, result) {
+                    $("#ddlStatus").append('<option value="' + result.statusvalue + '">' + result.statustext +'</option>');
+                    });
+                },
+                failure: function () {
+                    $("#ddlStatus").empty();
+                    $("#ddlStatus").append('<option value="-1">--Please All--</option>');
+                }
+            });
+        }
+
+        function inittbSearchResult() {
+            var oTable = $('#dataCampaignTable').DataTable({
+                processing: true, // for show progress bar
+                serverSide: true, // for process server side
+                filter: false, // this is for disable filter (search box)
+                orderMulti: false, // for disable multiple column at once
+                pageLength: 10,
+                order: [],
+                autoWidth: false,
+                searching: false,
+                destroy: true,
+                lengthChange: false,
+                "oLanguage": {
+                    "oPaginate": { "sPrevious": '<span aria-hidden="true"><h3>&laquo;</h3></span>', "sNext": '<span aria-hidden="true"><h3>&raquo;</h3></span>' },
+                    "sInfo": "Showing page _PAGE_ of _PAGES_",
+                    "sSearch": false,
+                    "sLengthMenu": "Results :  _MENU_",
+                },
+                 "scrollX": false,
+                  "language": {
+                  "zeroRecords": "No data found.",
+                   "decimal": ",",
+                  "thousands": "."
+                    },
+                    ajax: {
+                        url: '@Url.Action("LoadCampaignList", "RegisterCampaign")',
+                        type: "POST",
+                        datatype: "JSON",
+
+                        //dataSrc:"",
+                        data: function (d) {
+                            d.campaigncode = $("#txtcampaigncode").val(),
+                                d.campaignstatus = $("select[id$=ddlStatus]").val()
+                        //        d.team_Id = $("select[id$=selTeamName]").val(),
+                        //        d.status = $("select[id$=inputStatus]").val(),
+
+                        //        d.date_to = $("#inputRequestDateTo").val()
+                        }
+                    },
+                    columns: [
+                        //{
+                        //    data: null,width:"10%", render: function (data, type, row) {
+                        //        return "  <ul class='table-controls'><li> <a href='#' onclick=openModal('edit','" + row.EngineerId + "');return false;  data-toggle='modal' data-target='.bd-addedit-modal-xl' data-original-title='แก้ไข'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-edit'><path d='M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'></path><path d='M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z'></path></svg></a></li> <li> <a onclick=deleteData('" + row.EngineerId +"');return false; href='#'  data-toggle='tooltip' data-placement='top' title='Delete'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-trash-2'><polyline points='3 6 5 6 21 6'></polyline><path d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'></path><line x1='10' y1='11' x2='10' y2='17'></line><line x1='14' y1='11' x2='14' y2='17'></line></svg></a>";
+                        //    }
+                        //   // orderable: false,
+                        //    //className: 'text-center'
+                        //},
+                        { "data":  "row", "width": "5%" },
+                        { "data": "campaigncode", "width": "10%" },
+                        { "data": "campaigndesc", "width": "45%" },
+                        { "data": "customertype", "width": "7%" },
+                        { "data": "benefit", "width": "10%" },
+                        { "data": "perioddate", "width": "40%" },
+                        { "data": "status", "width": "15%" },
+                        {
+                            data: null, render: function (data, type, row) {
+                                // <a href="#" onclick=openModal('" + row.campaigncode + "') class="btn btn-light" data-toggle='modal' data-target='camdbDetail' data-original-title='CampaignDetail'><span class="icon text-white-50">\<span class="text">Detail</span></a >
+                                return "<a href='#' onclick=openModal('" + row.campaigncode + "') class='btn btn - light' data-toggle='modal' data-target='#CamdbDetail' data-original-title='CampaignDetail'><span class='icon text - white - 50'>\<span class='text'>Detail</span></a > ";
+                            },
+                            // orderable: false,
+                            className: 'text-center'
+                        },
+
+                ],
+                "order": [[0, "desc"]],
+                "stripeClasses": [],
+                drawCallback: function () { $('.dataTables_paginate > .pagination').addClass(' pagination-style-13 pagination-bordered mb-5'); }
+                });
+        }
+
+
+        function testalert()
+        {
+            bootbox.confirm({
+                message: "confirm with custom button text and color!",
+                buttons: {
+                    confirm: {
+                        label: 'Yes',
+                        className: 'btn-success'
+                    },
+                    cancel: {
+                        label: 'No',
+                        className: 'btn-danger'
+                    }
+                },
+                callback: function (result) {
+                    console.log('This was logged in the callback: ' + result);
+                }
+            });
+        }
+
+    </script>
+}

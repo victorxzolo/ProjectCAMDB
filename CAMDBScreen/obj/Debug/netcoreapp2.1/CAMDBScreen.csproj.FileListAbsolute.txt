@@ -1,0 +1,69 @@
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.deps.json
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.runtimeconfig.json
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.runtimeconfig.dev.json
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.dll
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.pdb
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.dll
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.pdb
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csprojAssemblyReference.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csproj.CoreCompileInputs.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorAssemblyInfo.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorAssemblyInfo.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfoInputs.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfo.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.TagHelpers.input.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.TagHelpers.output.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorCoreGenerate.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\RegisterCampaign\Index.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorTargetAssemblyInfo.cache
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorTargetAssemblyInfo.cs
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.Views.pdb
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.dll
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.pdb
+D:\BenjaongSuphan\2021\Project CAMDB-CampaignForActiveCustomer\_SourceCode\NewCAMDBSource\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csproj.CopyComplete
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\appsettings.Development.json
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\appsettings.json
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.deps.json
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.runtimeconfig.json
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.runtimeconfig.dev.json
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.dll
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.pdb
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.dll
+D:\CAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.pdb
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csprojAssemblyReference.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfoInputs.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfo.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csproj.CoreCompileInputs.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorAssemblyInfo.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorAssemblyInfo.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.TagHelpers.input.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.TagHelpers.output.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorCoreGenerate.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\RegisterCampaign\Index.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorTargetAssemblyInfo.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorTargetAssemblyInfo.cs
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.Views.pdb
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.dll
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.pdb
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.genruntimeconfig.cache
+D:\CAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csproj.CopyComplete

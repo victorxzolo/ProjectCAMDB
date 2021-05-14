@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CAMDBScreen</title>
+
+   
+    <environment include="Development">
+
+
+      
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link href="~/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+              rel="stylesheet">
+        <!-- Custom styles for this template-->
+        <link href="~/css/sb-admin-2.min.css" rel="stylesheet">
+        <link rel="icon" href="~/images/img-logo.png" />
+
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+
+    </environment>
+</head>
+<body id="page-top">
+
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+
+                </div>
+                <div class="sidebar-brand-text mx-3"> <sup></sup></div>
+            </a>
+            <!-- Divider -->
+            <br />
+            <div class="sidebar-card">
+                <img class="sidebar-card-illustration mb-2" src="~/images/person-circle.svg" alt="">
+                <p class="text-center mb-2" style="color:black"><strong>Sodsai Sudsuy</strong> </p>
+                <p class="text-center mb-2" style="color:black">Business Compliant </p>
+            </div>
+
+            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fi-rr-upload" style="color:black" aria-hidden="true"></i>
+
+                    <span style="color:black">Register Campaign</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fi-rr-browser" style="color:black" aria-hidden="true"></i>
+                    <span style="color:black">Upload Target</span>
+                </a>
+            </li>
+
+            <hr class="sidebar-divider d-none d-md-block">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fi-rr-align-justify" style="color:black" aria-hidden="true"></i>
+                    <span style="color:black">Inquiry</span>
+
+                </a>
+            </li>
+
+
+            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" style="color:black" id="sidebarToggle"></button>
+            </div>
+
+            <li>
+
+                <footer class="sticky-footer">
+
+
+                    <div class="text-center my-auto">
+                        <a href="#" class="btn btn-light">
+                            <span class="icon text-white-50">
+
+                            </span>
+                            <span style="color:black" class="text">Logout</span>
+                        </a>
+                    </div>
+                    <br />
+                    <div class="copyright text-center my-auto">
+                        <span style="color:black">VERSION 1.0</span>
+                    </div>
+
+                </footer>
+            </li>
+
+
+        </ul>
+
+
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content -->
+            <div id="content">
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top ">
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <span>CAMDB : Campaign for Active Customer</span>
+                    <!-- Topbar Navbar -->
+                    @*<ul class="navbar-nav ml-auto">
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+                <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                    <img class="img-profile rounded-circle"
+                         src="~/Content/img/undraw_profile.svg">
+                </a>
+                <!-- Dropdown - User Information -->
+                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                     aria-labelledby="userDropdown">
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Profile
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Settings
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Activity Log
+                    </a>
+                    <div class="dropdown-divider"></div>
+
+                </div>
+            </li>
+        </ul>*@
+                </nav>
+                
+                @RenderBody()
+
+
+
+
+
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; EASY BUY Public Company Limited 2021</span>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap and Jquery core  JavaScript-->
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+   @*<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />*@
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+
+    <script src="~/vendor/sb-admin-2.min.js"></script>
+    @*<script src="~/vendor/jquery/jquery.js"></script>*@
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+
+    @*<script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>*@
+        <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+    <!-- Core plugin JavaScript-->
+    <script src="~/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+
+
+    <!-- Core Component JavaScript-->
+    <script src="~/vendor/bootbox/bootbox.js"></script>
+
+        <script src="~/vendor/bootstrap-datetimepicker/js/bootstrap-datepicker.js"></script>
+        <link href="~/vendor/bootstrap-datetimepicker/css/datepicker.css" rel="stylesheet" />
+        <script src="~/vendor/autocomplete/jquery.autocomplete.js"></script>
+        <script src="~/vendor/autocomplete/jquery.autocomplete.min.js"></script>
+
+
+
+
+        <script src="~/vendor/datatables/jquery.dataTables.js"></script>
+
+        <link href="~/vendor/datatables/jquery.dataTables.min.css" rel="stylesheet" />
+
+        <link href="~/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
+
+
+    <environment include="Development">
+
+
+
+
+        <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+        @*DataTable*@
+
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>
+
+
+
+
+
+
