@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -21,7 +21,7 @@ namespace CAMDBScreen.Controllers
 {
     public class UploadTargetController : Controller
     {
-       
+
         private readonly ILogger<UploadTargetController> _logger;
         private IHostingEnvironment _hostingEnvironment;
         public UploadTargetController(ILogger<UploadTargetController> logger, IHostingEnvironment hostingEnvironment)
@@ -73,7 +73,7 @@ namespace CAMDBScreen.Controllers
                     }
                     IRow headerRow = sheet.GetRow(0); //Get Header Row
                     int cellCount = headerRow.LastCellNum;
-                   // string tb = @"<table class='table table-bordered' id='dataTable' width='100%' cellspacing='0'><thead><tr>";
+                    // string tb = @"<table class='table table-bordered' id='dataTable' width='100%' cellspacing='0'><thead><tr>";
                     //sb.Append(tb);
                     //for (int j = 0; j < cellCount; j++)
                     //{
@@ -170,7 +170,7 @@ namespace CAMDBScreen.Controllers
             string newPath = Path.Combine(webRootPath, folderName);
             StringBuilder sb = new StringBuilder();
             string res = "";
-            
+
             if (!Directory.Exists(newPath))
             {
                 Directory.CreateDirectory(newPath);
@@ -191,8 +191,8 @@ namespace CAMDBScreen.Controllers
                     {
                         HSSFWorkbook hssfwb = new HSSFWorkbook(stream); //This will read the Excel 97-2000 formats  
                         sheet = hssfwb.GetSheetAt(0); //get first sheet from workbook  
-                        
-                        
+
+
                         workBook = hssfwb;
                     }
                     else
@@ -206,7 +206,7 @@ namespace CAMDBScreen.Controllers
                     IRow headerRow = sheet.GetRow(0); //Get Header Row
                     int cellCount = headerRow.LastCellNum;
                     Hashtable hashCheckDup = new Hashtable();
-                    
+
                     for (int i = (sheet.FirstRowNum); i <= sheet.LastRowNum; i++) //Read Excel File
                     {
                         IRow row = sheet.GetRow(i);
@@ -215,19 +215,21 @@ namespace CAMDBScreen.Controllers
                         sb.Append("<tr>");
                         bool validate = true;
                         var key = row.GetCell(1).ToString() + row.GetCell(2).ToString() + row.GetCell(3).ToString();
-                        if(hashCheckDup.Count < 1) hashCheckDup.Add(key,i);
-                        if (hashCheckDup.ContainsKey(key)){
-                            string td =   "<td id='error'>" + row.GetCell(0).ToString() +
-                                          "</td><td id='error'>" + row.GetCell(1).ToString() + "</td>"+
-                                          "</td><td id='error'>" + row.GetCell(2).ToString() + "</td>"+
-                                          "</td><td id='error'>" + row.GetCell(3).ToString() + "</td>"; 
+                        if (hashCheckDup.Count < 1) hashCheckDup.Add(key, i);
+                        if (hashCheckDup.ContainsKey(key))
+                        {
+                            string td = "<td id='error'>" + row.GetCell(0).ToString() +
+                                          "</td><td id='error'>" + row.GetCell(1).ToString() + "</td>" +
+                                          "</td><td id='error'>" + row.GetCell(2).ToString() + "</td>" +
+                                          "</td><td id='error'>" + row.GetCell(3).ToString() + "</td>";
                             validate = false;
                             sb.Append(td);
-                                continue;
+                            continue;
                         }
-                        else {
+                        else
+                        {
                             hashCheckDup.Add(key, i);
-                            
+
                         }
                         if (validate == true)
                         {
@@ -237,18 +239,18 @@ namespace CAMDBScreen.Controllers
 
                         sb.Append("</tr>");
                         sb.Replace("<tr></tr>", "");
-                        
+
                     }
                     //end for row
-                    
-                    System.IO.File.AppendAllText(log, "End Time function validate = "+ DateTime.Now.ToString("HH:mm:ss:fff") + Environment.NewLine);
+
+                    System.IO.File.AppendAllText(log, "End Time function validate = " + DateTime.Now.ToString("HH:mm:ss:fff") + Environment.NewLine);
                     res = sb.ToString();
                 }
-            } 
+            }
             return this.Content(res);
         }
 
-        public string  ForLoop(ISheet sheet ,IWorkbook workbook)
+        public string ForLoop(ISheet sheet, IWorkbook workbook)
         {
             IRow headerRow = sheet.GetRow(0); //Get Header Row
             int cellCount = headerRow.LastCellNum;
@@ -257,7 +259,7 @@ namespace CAMDBScreen.Controllers
             StringBuilder sb = new StringBuilder();
             for (int i = (sheet.FirstRowNum); i <= sheet.LastRowNum; i++) //Read Excel File
             {
-                
+
                 StringBuilder text = new StringBuilder();
                 IRow row = sheet.GetRow(i);
                 if (row == null) continue;
@@ -339,9 +341,9 @@ namespace CAMDBScreen.Controllers
                 sb.Replace("<tr></tr>", "");
 
             }
-            return  sb.ToString();
+            return sb.ToString();
         }
-        public string requiredNum(ISheet sheet,int irow)
+        public string requiredNum(ISheet sheet, int irow)
         {
             IRow headerRow = sheet.GetRow(0);
             StringBuilder sb = new StringBuilder();
@@ -350,54 +352,54 @@ namespace CAMDBScreen.Controllers
             bool validate = true;
             int cellCount = headerRow.LastCellNum;
             for (int j = row.FirstCellNum; j < cellCount; j++)
+            {
+                if (row.GetCell(j) != null)
                 {
-                    if (row.GetCell(j) != null)
+                    string spec = row.GetCell(j).ToString().Replace(" ", string.Empty);
+                    bool isNumeric = long.TryParse(spec.Trim(), out long l);
+                    int let = spec.Length;
+                    if (let != 0)
                     {
-                        string spec = row.GetCell(j).ToString().Replace(" ", string.Empty);
-                        bool isNumeric = long.TryParse(spec.Trim(), out long l);
-                        int let = spec.Length;
-                        if (let != 0)
-                        {
-                            if (j == 0 || j == 1 || j == 2) if (isNumeric == false)
-                                {
-                                    text.Append("<td id='error'>" + "Numeric" + "</td>"); validate = false; continue;
-                                }
+                        if (j == 0 || j == 1 || j == 2) if (isNumeric == false)
+                            {
+                                text.Append("<td id='error'>" + "Numeric" + "</td>"); validate = false; continue;
+                            }
 
-                            if (j == 0 && let > 7)
-                            {
-                                text.Append("<td id='error'>" + "Maximum 7 characters" + "</td>"); validate = false; continue;
-                            }
-                            else if (j == 1 && let > 8)
-                            {
-                                text.Append("<td id='error'>" + "Maximum 8 characters" + "</td>"); validate = false; continue;
-                            }
-                            else if (j == 2 && let > 16)
-                            {
-                                text.Append("<td id='error'>" + "Maximum 16 characters" + "</td>"); validate = false; continue;
-                            }
-                            else if (j == 3 && let > 15)
-                            {
-                                text.Append("<td id='error'>" + "Maximum 15 characters" + "</td>"); validate = false; continue;
-                            }
-                            else
-                            {
-                                text.Append("<td>" + row.GetCell(j).ToString() + "</td>"); continue;
-                            }
+                        if (j == 0 && let > 7)
+                        {
+                            text.Append("<td id='error'>" + "Maximum 7 characters" + "</td>"); validate = false; continue;
+                        }
+                        else if (j == 1 && let > 8)
+                        {
+                            text.Append("<td id='error'>" + "Maximum 8 characters" + "</td>"); validate = false; continue;
+                        }
+                        else if (j == 2 && let > 16)
+                        {
+                            text.Append("<td id='error'>" + "Maximum 16 characters" + "</td>"); validate = false; continue;
+                        }
+                        else if (j == 3 && let > 15)
+                        {
+                            text.Append("<td id='error'>" + "Maximum 15 characters" + "</td>"); validate = false; continue;
                         }
                         else
                         {
-                            
-                            text.Append("<td id='error'>" + "required" + "</td>");
-                            validate = false;
-                            continue;
+                            text.Append("<td>" + row.GetCell(j).ToString() + "</td>"); continue;
                         }
                     }
+                    else
+                    {
+
+                        text.Append("<td id='error'>" + "required" + "</td>");
+                        validate = false;
+                        continue;
+                    }
                 }
-                
-                if(validate == false)
-                {
-                    sb.Append(text.ToString());
-                }
+            }
+
+            if (validate == false)
+            {
+                sb.Append(text.ToString());
+            }
 
             return sb.ToString();
         }
@@ -474,7 +476,7 @@ namespace CAMDBScreen.Controllers
             MemoryStream ms = new MemoryStream(fileBytes);
             return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, "employee.xlsx");
         }
-       
+
 
     }
 }

@@ -7,6 +7,7 @@
   <ItemGroup>
     <PackageReference Include="bootstrap" Version="4.6.0" />
     <PackageReference Include="Bootstrap.v3.Datetimepicker.CSS" Version="4.17.49" />
+    <PackageReference Include="DotNetCore.NPOI" Version="1.2.2" />
     <PackageReference Include="FontAwesome" Version="4.7.0" />
     <PackageReference Include="jQuery" Version="3.3.1" />
     <PackageReference Include="jQuery.UI.Combined" Version="1.12.0" />

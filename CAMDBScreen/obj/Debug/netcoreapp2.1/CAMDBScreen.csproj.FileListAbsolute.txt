@@ -76,7 +76,6 @@ C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBSc
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.pdb
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.dll
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.pdb
-C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csprojAssemblyReference.cache
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfoInputs.cache
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfo.cs
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csproj.CoreCompileInputs.cache
@@ -95,6 +94,8 @@ C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\V
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\UploadTarget\datatable.cshtml.g.cs
+C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\UploadTarget\index.cshtml.g.cs
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.RazorTargetAssemblyInfo.cache
