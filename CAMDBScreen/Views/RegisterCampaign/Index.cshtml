@@ -156,6 +156,7 @@
                                     <tr>
                                         <th>#</th>
                                         <th>CampaignCode</th>
+                                        <th>CampaignType</th>
                                         <th>Description</th>
                                         <th>Customer</th>
                                         <th>Type</th>
@@ -335,136 +336,158 @@
 
                             <div class="row mt-4 ml-3 mr-1">
 
-                                <div class=" col-md-6 mt-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label>CampaignCode:</label>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <input type='text' id="_txtCampaignCode" class="form-control" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" col-md-6 mt-3">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label>Campaign Desc: </label>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <input type='text' id="_txtCampaigndesc" class="form-control" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divCAMPAIGNTYPE').show();-->
+                                <div id="divCAMPAIGNTYPE" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <label>CampaignType:</label>
                                         </div>
                                         <div class="col-md-7">
                                             <input type='text' id="_txtCampaignType" class="form-control" />
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divCAMPAIGNTYPEDESC').show();-->
+                                <div id="divCAMPAIGNTYPEDESC" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>CustomerType:</label>
+                                            <label>Campaign Type Desc:</label>
                                         </div>
                                         <div class="col-md-7">
                                             <input type='text' id="_txtCampaignTypeDesc" class="form-control" />
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divCAMPAIGNCODE').show();-->
+                                <div id="divCAMPAIGNCODE" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>CustomerType:</label>
+                                            <label>Campaign Code:</label>
                                         </div>
                                         <div class="col-md-7">
-                                            <input type='text' id="_txtCustomerType" class="form-control" />
-
+                                            <input type='text' id="_txtCampaignCode" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divCAMPAIGNDESC').show();-->
+                                <div id="divCAMPAIGNDESC" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Campaign Desc:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtCampaignDesc" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divBENEFIT').show();-->
+                                <div id="divBENEFIT" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
                                             <label>Benefit:</label>
                                         </div>
                                         <div class="col-md-7">
                                             <input type='text' id="_txtBenefit" class="form-control" />
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divCUSTOMERTYPE').show();-->
+                                <div id="divCUSTOMERTYPE" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>Status:</label>
+                                            <label>Customer Type:</label>
                                         </div>
                                         <div class="col-md-7">
-                                            <input type='text' id="_status" class="form-control" />
-
+                                            <input type='text' id="_txtCustomerType" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divCARDTYPE').show();-->
+                                <div id="divCARDTYPE" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>CampaignType Desc:</label>
-                                        </div>
-                                        <div class="col-md-7">
-                                            <input type='text' id="_txtcampaigntypedesc" class="form-control" />
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" col-md-6 mt-4">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <label>CardType:</label>
+                                            <label>Card Type:</label>
                                         </div>
                                         <div class="col-md-7">
                                             <input type='text' id="_txtCardType" class="form-control" />
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divACTIONTYPE').show();-->
+                                <div id="divACTIONTYPE" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>ActionType:</label>
+                                            <label>Card Type:</label>
                                         </div>
                                         <div class="col-md-7">
                                             <input type='text' id="_txtActionType" class="form-control" />
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divCAMPTYPE').show();-->
+                                <div id="divCAMPTYPE" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>bint:</label>
+                                            <label>Camp Type:</label>
                                         </div>
                                         <div class="col-md-7">
-                                            <input type='text' id="_txtBint" class="form-control" />
-
+                                            <input type='text' id="_txtCampType" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divEXPIRERECEIVE').show();-->
+                                <div id="divEXPIRERECEIVE" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Expire Recive:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtExpireRecive" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divBENEFITGVAMOUNT').show();-->
+                                <div id="divBENEFITGVAMOUNT" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Benefit GV Amount:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtBenefitGVAmount" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divKEEPOB').show();-->
+                                <div id="divKEEPOB" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Keep OB:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtKeepOB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divWITHDRAWAMOUNT').show();-->
+                                <div id="divWITHDRAWAMOUNT" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>With Draw Amount:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtWithDrawAmount" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divUNITDATE').show();-->
+                                <div id="divUNITDATE" class=" col-md-6 mt-4">
                                     <div class="row">
 
                                         <div class="col-md-4">
-                                            <label class="">Request Date:</label>
+                                            <label class="">Unit Date:</label>
                                         </div>
-
-
-
                                         <div class="col-md-7">
-                                            <div class='input-group p-0 input-append  date' id='RequestDate'>
+                                            <div class='input-group p-0 input-append  date' id='UnitDate'>
                                                 <input type='text' class="form-control" name="date" required />
                                                 <div class="input-group-append input-group-addon">
                                                     <span class="input-group-text px-4 input-group-addon add-on">
@@ -477,41 +500,350 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divEXPIREGVDATE').show();-->
+                                <div id="divEXPIREGVDATE" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">Expire GV Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='ExpireGVDate'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divWITHDRAWDATE').show();-->
+                                <div id="divWITHDRAWDATE" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">WithDraw Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='WithDrawDate'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divTARGETQUALIFICATION').show();-->
+                                <div id="divTARGETQUALIFICATION" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>cru:</label>
+                                            <label>Target Qualification:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtTragetQualification" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divEXCEPTIONCAMP').show();-->
+                                <div id="divEXCEPTIONCAMP" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Exception Camp:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtExceptionCamp" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divGENTARGETDATE').show();-->
+                                <div id="divGENTARGETDATE" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">GEN Traget Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='GenTragetDate'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divWITHDRAWDATESTART').show();-->
+                                <div id="divWITHDRAWDATESTART" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">WithDraw DateStart:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='WithdrawDateStart'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divWITHDRAWDATEEND').show();-->
+                                <div id="divWITHDRAWDATEEND" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">WithDraw DateEnd:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='WithdrawDateEnd'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divENDDATE').show();-->
+                                <div id="divENDDATE" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">END Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='ENDDATE'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divBINT').show();-->
+                                <div id="divBINT" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>BINT:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtBint" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divCRU').show();-->
+                                <div id="divCRU" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>CRU:</label>
                                         </div>
                                         <div class="col-md-7">
                                             <input type='text' id="_txtCru" class="form-control" />
-
                                         </div>
                                     </div>
                                 </div>
-                                <div class=" col-md-6 mt-4">
+                                <!--$('#divBILL').show();-->
+                                <div id="divBILL" class="col-md-6 mt-3">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <label>Bill:</label>
+                                            <label>BILL:</label>
                                         </div>
                                         <div class="col-md-7">
                                             <input type='text' id="_txtBill" class="form-control" />
-
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divBDAY').show();-->
+                                <div id="divBDAY" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>BDay:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtBDay" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divWITHINDAY').show();-->
+                                <div id="divWITHINDAY" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>WithInDay:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtwithInDay" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divREMAINOB').show();-->
+                                <div id="divREMAINOB" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>RemainOB:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtRemainOB" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divPERIODOB').show();-->
+                                <div id="divPERIODOB" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>PeriodOB:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtPeriodOB" class="form-control" />
                                         </div>
                                     </div>
                                 </div>
 
+                                <!--$('#divPROCESSLABEL').show();-->
+                                <div id="divPROCESSLABEL" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>PROCESS LABEL:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtProcessLable" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divREGISTERBY').show();-->
+                                <div id="divREGISTERBY" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>REGISTER BY:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtRegisterBy" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divAPPROVEBY').show();-->
+                                <div id="divAPPROVEBY" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Apprvove BY:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtApproveBy" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divLASTDATE').show();-->
+                                <div id="divLASTDATE" class=" col-md-6 mt-4">
+                                    <div class="row">
 
+                                        <div class="col-md-4">
+                                            <label class="">Last Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='LastDate'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divREGISTERDATE').show();-->
+                                <div id="divREGISTERDATE" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">Register Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='RegisterDate'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divUPDATEDATE').show();-->
+                                <div id="divUPDATEDATE" class=" col-md-6 mt-4">
+                                    <div class="row">
+
+                                        <div class="col-md-4">
+                                            <label class="">Update Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <div class='input-group p-0 input-append  date' id='UpdateDate'>
+                                                <input type='text' class="form-control" name="date" required />
+                                                <div class="input-group-append input-group-addon">
+                                                    <span class="input-group-text px-4 input-group-addon add-on">
+                                                        <i class="fi-rr-calendar"></i>
+                                                    </span>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--$('#divPERIODDATE').show();-->
+                                <div id="divPERIODDATE" class="col-md-6 mt-3">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <label>Period Date:</label>
+                                        </div>
+                                        <div class="col-md-7">
+                                            <input type='text' id="_txtPeriodDate" class="form-control" />
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
 
                         </div>
 
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">
+                            <button type="button" class="btn btn-danger" onclick="onClose();"  data-dismiss="modal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
                                 Closed
                             </button>
-                            <button id="btnSave" type="submit" @*onclick="RequestTraining()" *@ class="btn btn-primary">
+                            <button id="btnSave" type="submit"  class="btn btn-primary">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-save"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
                                 Save
                             </button>
@@ -542,13 +874,55 @@
 
             inittbSearchResult()
             GetDropDownStatus();
-            $('#RequestDate').datepicker({
+
+            $('#ExpireGVDate').datepicker({
                 format: 'dd/mm/yyyy',
                 autoWidth: true,
                 autoClose:true
             });
+            $('#UnitDate').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
+            $('#WithDrawDate').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
 
+            $('#GenTragetDate').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
+            $('#WithdrawDateStart').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
+            $('#WithdrawDateEnd').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
 
+            
+            $('#LastDate').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
+            $('#RegisterDate').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
+            $('#UpdateDate').datepicker({
+                format: 'dd/mm/yyyy',
+                autoWidth: true,
+                autoClose: true
+            });
 
             $('#txtcampaigncode').autocomplete({
                 lookup: function (query, done) {
@@ -584,9 +958,9 @@
 
         });
 
-        function openModal(campaigncode) {
+        function openModal(campaigncode,campaigntype,benefit) {
           //  alert(campaigncode);
-
+            showField();
               $.ajax({
                   url: '@Url.Action("GetDataByCampaignCode", "RegisterCampaign")',
                   type: 'POST',
@@ -596,21 +970,49 @@
                       console.log(data)
                       if (data != null) {
                           $.each(data, function (id, data) {
-                              //  alert(data.campaigncode);
-                              $("#_txtCampaignCode").val(data.campaigncode);
-                              $("#_txtCampaigndesc").val(data.campaigndesc);
-                              $("#_txtCampaignTypeDesc").val(data.campaigntypedesc);
+                              setField(campaigntype,benefit, data.actiontype);
+                             
                               $("#_txtCampaignType").val(data.campaigntype);
-                              //  $("#_txtCampaignType").val(data.campaigntype);
+                              $("#_txtCampaignTypeDesc").val(data.campaigntypedesc);
+                              $("#_txtCampaignCode").val(data.campaigncode);
+                              $("#_txtCampaignDesc").val(data.campaigndesc);
+                              $("#_txtBenefit").val(data.benefit);
+                              $("#_txtCustomerType").val(data.customertype);
+                              $("#_txtCardType").val(data.cardtype);
+                              $("#_txtActionType").val(data.actiontype);
+                              $("#_txtCampType").val(data.camptype);
+                              $("#_txtExpireRecive").val(data.expirereceive);
+                              $("#_txtBenegfitGVAmount").val(data.benefitgvamount);
+                              $("#_txtKeepOB").val(data.keepob);
+                              $("#_txtWithDrawAmount").val(data.withdrawamount);
+                          //    $("#_txtUnitDate").val(data.unitdate);
+                           //   $("#_txtExpireDate").val(data.expiregvdate);
+                            //  $("#_txtWithDrawDate").val(data.withdrawdate);
+                              $("#_txtTragetQulification").val(data.targetqualification);
+                              $("#_txtExceptionCamp").val(data.exceptioncamp);
+                              $("#_txtGenTragetDate").val(data.gentargetdate);
+                           //   $("#_txtWithDrawDateStart").val(data.withdrawdatestart);
+                          //    $("#_txtWithDrawDateEnd").val(data.withdrawdateend);
+                          //    $("#_txtEndDate").val(data.enddate);
+                              $("#_txtBint").val(data.bint);
+                              $("#_txtCru").val(data.cru);
+                              $("#_txtBill").val(data.bill);
+                              $("#_txtBDay").val(data.bday);
+                              $("#_txtWithInDay").val(data.withinday);
+                              $("#_txtRemainOB").val(data.remainob);
+                              $("#_txtPeriodOB").val(data.periodob);
+                              $("#_txtProcessLable").val(data.processlabel);
+                              $("#_txtRegisterBy").val(data.registerby);
+                              $("#_txtApproveBy").val(data.approveby);
+                         //     $("#_txtLastDate").val(data.lastdate);
+                         //     $("#_txtRegisterDate").val(data.registerdate);
+                          //    $("#_txtUpdateDate").val(data.updatedate);
+                              $("#_txtPeriodDate").val(data.perioddate);
+
                           });
                       }
                       else {
-                         
-                          var datanull = "-";
-                          $("#_txtCampaignCode").val(datanull);
-                          $("#_txtCampaigndesc").val(datanull);
-                          $("#_txtCampaignTypeDesc").val(datanull);
-                          $("#_txtCampaignType").val(datanull);
+                       
                       }
                   },
                   error: function (result) {
@@ -675,23 +1077,15 @@
                         //dataSrc:"",
                         data: function (d) {
                             d.campaigncode = $("#txtcampaigncode").val(),
-                                d.campaignstatus = $("select[id$=ddlStatus]").val()
-                        //        d.team_Id = $("select[id$=selTeamName]").val(),
-                        //        d.status = $("select[id$=inputStatus]").val(),
-
-                        //        d.date_to = $("#inputRequestDateTo").val()
+                            d.campaignstatus = $("select[id$=ddlStatus]").val()
+                   
                         }
                     },
                     columns: [
-                        //{
-                        //    data: null,width:"10%", render: function (data, type, row) {
-                        //        return "  <ul class='table-controls'><li> <a href='#' onclick=openModal('edit','" + row.EngineerId + "');return false;  data-toggle='modal' data-target='.bd-addedit-modal-xl' data-original-title='แก้ไข'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-edit'><path d='M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7'></path><path d='M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z'></path></svg></a></li> <li> <a onclick=deleteData('" + row.EngineerId +"');return false; href='#'  data-toggle='tooltip' data-placement='top' title='Delete'><svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-trash-2'><polyline points='3 6 5 6 21 6'></polyline><path d='M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2'></path><line x1='10' y1='11' x2='10' y2='17'></line><line x1='14' y1='11' x2='14' y2='17'></line></svg></a>";
-                        //    }
-                        //   // orderable: false,
-                        //    //className: 'text-center'
-                        //},
+                        
                         { "data":  "row", "width": "5%" },
                         { "data": "campaigncode", "width": "10%" },
+                        { "data": "campaigntype", "width": "20%" },
                         { "data": "campaigndesc", "width": "45%" },
                         { "data": "customertype", "width": "7%" },
                         { "data": "benefit", "width": "10%" },
@@ -700,7 +1094,7 @@
                         {
                             data: null, render: function (data, type, row) {
                                 // <a href="#" onclick=openModal('" + row.campaigncode + "') class="btn btn-light" data-toggle='modal' data-target='camdbDetail' data-original-title='CampaignDetail'><span class="icon text-white-50">\<span class="text">Detail</span></a >
-                                return "<a href='#' onclick=openModal('" + row.campaigncode + "') class='btn btn - light' data-toggle='modal' data-target='#CamdbDetail' data-original-title='CampaignDetail'><span class='icon text - white - 50'>\<span class='text'>Detail</span></a > ";
+                                return "<a href='#' onclick=openModal('" + row.campaigncode + "','" + row.campaigntype + "','" + row.benefit + "') class='btn btn - light' data-toggle='modal' data-target='#CamdbDetail' data-original-title='CampaignDetail'><span class='icon text - white - 50'>\<span class='text'>Detail</span></a > ";
                             },
                             // orderable: false,
                             className: 'text-center'
@@ -712,6 +1106,305 @@
                 drawCallback: function () { $('.dataTables_paginate > .pagination').addClass(' pagination-style-13 pagination-bordered mb-5'); }
                 });
         }
+        function ClearField() {
+
+            $("#_txtCampaignType").val('');
+            $("#_txtCampaignTypeDesc").val('');
+            $("#_txtCampaignCode").val('');
+            $("#_txtCampaignDesc").val('');
+            $("#_txtBenefit").val('');
+            $("#_txtCustomerType").val('');
+            $("#_txtCardType").val('');
+            $("#_txtActionType").val('');
+            $("#_txtCampType").val('');
+            $("#_txtExpireRecive").val('');
+            $("#_txtBenegfitGVAmount").val('');
+            $("#_txtKeepOB").val('');
+            $("#_txtWithDrawAmount").val('');
+            //$("#_txtUnitDate").val(data.unitdate);
+            //$("#_txtExpireDate").val(data.expiregvdate);
+            //$("#_txtWithDrawDate").val(data.withdrawdate);
+            $("#_txtTragetQulification").val('');
+            $("#_txtExceptionCamp").val('');
+            $("#_txtGenTragetDate").val('');
+            //$("#_txtWithDrawDateStart").val(data.withdrawdatestart);
+            //$("#_txtWithDrawDateEnd").val(data.withdrawdateend);
+            //$("#_txtEndDate").val(data.enddate);
+            $("#_txtBint").val('');
+            $("#_txtCru").val('');
+            $("#_txtBill").val('');
+            $("#_txtBday").val('');
+            $("#_txtWithInDay").val('');
+            $("#_txtRemainOB").val('');
+            $("#_txtPeriodOB").val('');
+            $("#_txtProcessLable").val('');
+            $("#_txtRegisterBy").val('');
+            $("#_txtApproveBy").val('');
+            //$("#_txtLastDate").val(data.lastdate);
+            //$("#_txtRegisterDate").val(data.registerdate);
+            //$("#_txtUpdateDate").val(data.updatedate);
+            $("#_txtPeriodDate").val('');
+
+
+        }
+        function onClose() {
+            console.log('onclose');
+            ClearField();
+            showField();
+            
+
+        }
+        function showField() {
+          //  alert('Show');
+            $('#divCAMPAIGNTYPE').show();
+            $('#divCAMPAIGNTYPEDESC').show();
+            $('#divCAMPAIGNCODE').show();
+            $('#divCAMPAIGNDESC').show();
+            $('#divBENEFIT').show();
+            $('#divCUSTOMERTYPE').show();
+            $('#divCARDTYPE').show();
+            $('#divACTIONTYPE').show();
+            $('#divCAMPTYPE').show();
+            $('#divEXPIRERECEIVE').show();
+            $('#divBENEFITGVAMOUNT').show();
+            $('#divKEEPOB').show();
+            $('#divWITHDRAWAMOUNT').show();
+            $('#divUNITDATE').show();
+            $('#divEXPIREGVDATE').show();
+            $('#divWITHDRAWDATE').show();
+            $('#divTARGETQUALIFICATION').show();
+            $('#divEXCEPTIONCAMP').show();
+            $('#divGENTARGETDATE').show();
+            $('#divWITHDRAWDATESTART').show();
+            $('#divWITHDRAWDATEEND').show();
+            $('#divENDDATE').show();
+            $('#divBINT').show();
+            $('#divCRU').show();
+            $('#divBILL').show();
+            $('#divBDAY').show();
+            $('#divWITHINDAY').show();
+            $('#divREMAINOB').show();
+            $('#divPERIODOB').show();
+            $('#divPROCESSLABEL').show();
+            $('#divREGISTERBY').show();
+            $('#divAPPROVEBY').show();
+            $('#divLASTDATE').show();
+            $('#divREGISTERDATE').show();
+            $('#divUPDATEDATE').show();
+            $('#divPERIODDATE').show();
+        }
+        function setField(Campaigntype, Benefit,Action) {
+            if ((Campaigntype == "FWD" || Campaigntype == "ACT" || Campaigntype == "MEX") && Benefit == "PM") {
+                $("#divCAMPTYPE").hide();
+                $("#divEXPIRERECEIVE").hide();
+                $("#divBENEFITGVAMOUNT").hide();
+                $("#divKEEPOB").hide();
+                $("#divWITHDRAWAMOUNT").hide();
+                $("#divUNITDATE").hide();
+                $("#divEXPIREGVDATE").hide();
+                $("#divWITHDRAWDATE").hide();
+                $("#divTARGETQUALIFICATION").hide();
+                $("#divEXCEPTIONCAMP").hide();
+                $("#divGENTARGETDATE").hide();
+                $("#divWITHDRAWDATESTART").hide();
+                $("#divWITHDRAWDATEEND").hide();
+                $("#divENDDATE").hide();
+                $("#divBINT").hide();
+                $("#divCRU").hide();
+                $("#divBILL").hide();
+                $("#divBDAY").hide();
+
+            }
+            else if (Campaigntype == "FWD" && Benefit == "RT") {
+               //  alert('B');
+                $("#divCAMPTYPE").hide();
+                $("#divEXPIRERECEIVE").hide();
+                $("#divBENEFITGVAMOUNT").hide();
+                $("#divKEEPOB").hide();
+                $("#divWITHDRAWAMOUNT").hide();
+                $("#divUNITDATE").hide();
+                $("#divEXPIREGVDATE").hide();
+                $("#divWITHDRAWDATE").hide();
+                $("#divTARGETQUALIFICATION").hide();
+                $("#divEXCEPTIONCAMP").hide();
+                $("#divGENTARGETDATE").hide();
+                $("#divWITHDRAWDATESTART").hide();
+                $("#divWITHDRAWDATEEND").hide();
+                $("#divENDDATE").hide();
+                $("#divWITHINDAY").hide();
+                $("#divREMAINOB").hide();
+                $("#divPERIODOB").hide();
+                $("#divPROCESSLABEL").hide();
+                $("#divLASTDATE").hide();
+
+            }
+            else if (Campaigntype == "MGM" || Campaigntype == "PGP") {
+                //. alert('C');
+                $("#divBENEFITGVAMOUNT").hide();
+                $("#divKEEPOB").hide();
+                $("#divWITHDRAWAMOUNT").hide();
+                $("#divUNITDATE").hide();
+                $("#divEXPIREGVDATE").hide();
+                $("#divWITHDRAWDATE").hide();
+                $("#divTARGETQUALIFICATION").hide();
+                $("#divEXCEPTIONCAMP").hide();
+                $("#divGENTARGETDATE").hide();
+                $("#divWITHDRAWDATESTART").hide();
+                $("#divWITHDRAWDATEEND").hide();
+                $("#divENDDATE").hide();
+                $("#divBINT").hide();
+                $("#divCRU").hide();
+                $("#divBILL").hide();
+                $("#divBDAY").hide();
+                $("#divWITHINDAY").hide();
+                $("#divREMAINOB").hide();
+                $("#divPERIODOB").hide();
+                $("#divPROCESSLABEL").hide();
+                $("#divLASTDATE").hide();
+
+            }
+            else if (Campaigntype == "NON" || Campaigntype == "NVR") {
+                 ///alert('D');
+
+                $("#divCAMPTYPE").hide();
+                $("#divEXPIRERECEIVE").hide();
+                $("#divBENEFITGVAMOUNT").hide();
+                $("#divKEEPOB").hide();
+                $("#divWITHDRAWAMOUNT").hide();
+                $("#divUNITDATE").hide();
+                $("#divEXPIREGVDATE").hide();
+                $("#divWITHDRAWDATE").hide();
+                $("#divWITHINDAY").hide();
+                $("#divREMAINOB").hide();
+                $("#divPERIODOB").hide();
+                $("#divPROCESSLABEL").hide();
+                $("#divLASTDATE").hide();
+
+            }
+            else if (Campaigntype == "SPC") {
+                if (Benefit == "GV") {
+                    if (ActionType == "WK") {
+                        $("#divCARDTYPE").hide();
+                        $("#divCAMPTYPE").hide();
+                        $("#divEXPIRERECEIVE").hide();
+                        $("#divTARGETQUALIFICATION").hide();
+                        $("#divEXCEPTIONCAMP").hide();
+                   
+                        $("#divWITHDRAWDATESTART").hide();
+                        $("#divWITHDRAWDATEEND").hide();
+                        $("#divENDDATE").hide();
+                        $("#divBINT").hide();
+                        $("#divCRU").hide();
+                        $("#divBILL").hide();
+                        $("#divBDAY").hide();
+                        $("#divWITHINDAY").hide();
+                        $("#divREMAINOB").hide();
+                        $("#divPERIODOB").hide();
+                        $("#divPROCESSLABEL").hide();
+                        $("#divLASTDATE").hide();
+                    }
+                    else {
+                       // alert('F');
+                        $("#divCARDTYPE").hide();
+                        $("#divCAMPTYPE").hide();
+                        $("#divEXPIRERECEIVE").hide();
+                        $("#divKEEPOB").hide();
+                        $("#divKEEPOB").hide();
+                        $("#divTARGETQUALIFICATION").hide();
+                        $("#divEXCEPTIONCAMP").hide();
+                      //  $("#divGENTARGETDATE").hide();
+                        $("#divWITHDRAWDATESTART").hide();
+                        $("#divWITHDRAWDATEEND").hide();
+                        $("#divENDDATE").hide();
+                        $("#divBINT").hide();
+                        $("#divCRU").hide();
+                        $("#divBILL").hide();
+                        $("#divBDAY").hide();
+                        $("#divWITHINDAY").hide();
+                        $("#divREMAINOB").hide();
+                        $("#divPERIODOB").hide();
+                        $("#divPROCESSLABEL").hide();
+                        $("#divLASTDATE").hide();
+
+                    }
+                }
+                else if (Benefit == "RR") {
+                    if (ActionType == "WK") {
+                       // alert('G');
+                        $("#divCAMPTYPE").hide();
+                        $("#divEXPIRERECEIVE").hide();
+                        $("#divBENEFITGVAMOUNT").hide();
+                        $("#divEXPIREGVDATE").hide();
+                        $("#divTARGETQUALIFICATION").hide();
+                        $("#divEXCEPTIONCAMP").hide();
+                        $("#divWITHDRAWDATESTART").hide();
+                        $("#divWITHDRAWDATEEND").hide();
+                        $("#divENDDATE").hide();
+                        $("#divBINT").hide();
+                        $("#divCRU").hide();
+                        $("#divBILL").hide();
+                        $("#divBDAY").hide();
+                        $("#divWITHINDAY").hide();
+                        $("#divREMAINOB").hide();
+                        $("#divPERIODOB").hide();
+                        $("#divPROCESSLABEL").hide();
+                        $("#divLASTDATE").hide();
+                    }
+                    else {
+                      //  alert('H');
+                        $("#divCAMPTYPE").hide();
+                        $("#divEXPIRERECEIVE").hide();
+                        $("#divBENEFITGVAMOUNT").hide();
+                        $("#divKEEPOB").hide();
+                        $("#divUNITDATE").hide();
+                        $("#divEXPIREGVDATE").hide();
+                        $("#divTARGETQUALIFICATION").hide();
+                        $("#divEXCEPTIONCAMP").hide();
+                      
+                        $("#divWITHDRAWDATESTART").hide();
+                        $("#divWITHDRAWDATEEND").hide();
+                        $("#divENDDATE").hide();
+                        $("#divBINT").hide();
+                        $("#divCRU").hide();
+                        $("#divBILL").hide();
+                        $("#divBDAY").hide();
+                        $("#divWITHINDAY").hide();
+                        $("#divREMAINOB").hide();
+                        $("#divPERIODOB").hide();
+                        $("#divPROCESSLABEL").hide();
+                        $("#divLASTDATE").hide();
+
+                    }
+                }
+                else if (Benefit == "SW" || Benefit == "UP") {
+                    // alert('A');
+                    $("#divCAMPTYPE").hide();
+                    $("#divEXPIRERECEIVE").hide();
+                    $("#divBENEFITGVAMOUNT").hide();
+                    $("#divKEEPOB").hide();
+                    $("#divWITHDRAWAMOUNT").hide();
+                    $("#divUNITDATE").hide();
+                    $("#divEXPIREGVDATE").hide();
+                    $("#divTARGETQUALIFICATION").hide();
+                    $("#divEXCEPTIONCAMP").hide();
+                  
+                    $("#divWITHDRAWDATESTART").hide();
+                    $("#divWITHDRAWDATEEND").hide();
+                    $("#divENDDATE").hide();
+                    $("#divBINT").hide();
+                    $("#divCRU").hide();
+                    $("#divBILL").hide();
+                    $("#divBDAY").hide();
+                    $("#divWITHINDAY").hide();
+                    $("#divREMAINOB").hide();
+                    $("#divPERIODOB").hide();
+                    $("#divPROCESSLABEL").hide();
+                    $("#divLASTDATE").hide();
+                }
+
+            }
+        }
+
 
 
         function testalert()

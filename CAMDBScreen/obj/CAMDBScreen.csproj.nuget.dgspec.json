@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CAMDB\\CAMDBScreen\\CAMDBScreen.csproj": {}
+    "C:\\Users\\User\\Documents\\ProjectCAMDB\\CAMDBScreen\\CAMDBScreen.csproj": {}
   },
   "projects": {
-    "D:\\CAMDB\\CAMDBScreen\\CAMDBScreen.csproj": {
+    "C:\\Users\\User\\Documents\\ProjectCAMDB\\CAMDBScreen\\CAMDBScreen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CAMDB\\CAMDBScreen\\CAMDBScreen.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Documents\\ProjectCAMDB\\CAMDBScreen\\CAMDBScreen.csproj",
         "projectName": "CAMDBScreen",
-        "projectPath": "D:\\CAMDB\\CAMDBScreen\\CAMDBScreen.csproj",
-        "packagesPath": "C:\\Users\\o4101007\\.nuget\\packages\\",
-        "outputPath": "D:\\CAMDB\\CAMDBScreen\\obj\\",
+        "projectPath": "C:\\Users\\User\\Documents\\ProjectCAMDB\\CAMDBScreen\\CAMDBScreen.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Documents\\ProjectCAMDB\\CAMDBScreen\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\o4101007\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

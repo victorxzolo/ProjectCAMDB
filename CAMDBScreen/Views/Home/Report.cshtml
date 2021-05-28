@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "JASPER Report ASP";
+}
+<div id="content-wrapper" class="d-flex flex-column">
+
+    <!-- Main Content -->
+    <div id="content">
+
+
+        <div class="container-fluid">
+
+            <h1 class="h6" style="color:black">Register Campaign Code</h1>
+
+            <!-- Page Heading -->
+            <!-- Content Row -->
+
+
+
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+
+                <!-- Area Chart -->
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Search Camapign</h6>
+                    </div>
+                    <div class="card-body">
+
+
+
+
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3"></div>
+                            <div class="col-md-3 col-sm-3" style="text-align:right;">
+                                <a href="#" id="btn" class="btn btn-primary" onclick="GetReport();">
+                                    <span class="icon text-white-50">
+                                        @*<i class="fas fa-search"></i>*@
+                                    </span>
+                                    <span class="text">Report</span>
+                                </a>
+                            </div>
+                            <div class="col-md-1 col-sm-1">
+
+                            </div>
+                            <div class="col-md-5 col-sm-5" style="text-align:left">
+                                <a href="#" class="btn btn-danger">
+                                    <span class="icon text-white-50">
+                                        @*<i class="fas fa-times"></i>*@
+                                    </span>
+                                    <span class="text">ยกเลิก</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+@section Scripts {
+
+    <script type="text/javascript">
+
+
+        function GetReport() {
+            console.log('JASPER REPORT');
+               $.ajax({
+                  url: '@Url.Action("GetReport", "Home")',
+                  type: 'POST',
+                 //  data: { 'campaigncode': campaigncode},
+                  dataType: "json",
+                  success: function (data) {
+                      console.log(data)
+                      if (data != null) {
+                         
+                      }
+                      else {
+
+                        
+                      }
+                  },
+                  error: function (result) {
+
+                  }
+
+            });
+        }
+    </script>
+
+
+  
+}
+   
+
