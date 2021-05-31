@@ -56,12 +56,36 @@
                 </div>
             </div>
         </div>
-
+        <div class="form-group" style="color:black; width:50%;">
+            <div style="position:relative">
+                <input id="mydate" type="text" class="form-control" data-date-format="dd/mm/yyyy" placeholder="Select a Date">
+                <span style="font-size: 20px;
+    				position: absolute;
+				  	pointer-events: none;
+   			 		top: 6px;
+   					right: 2%;"
+                      class="fi-rr-calendar"></span>
+            </div>
+            <div class="bdc" style="position:relative"></div>
+        </div>
+       
     </div>
 </div>
 @section Scripts {
 
     <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#mydate').datepicker({
+                todayHighlight: true,
+                orientation: "bottom left",
+                format: "mm/dd/yy",
+                container: ".bdc"
+        
+            });
+
+
+        });
 
 
         function GetReport() {
