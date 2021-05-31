@@ -76,7 +76,6 @@ C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBSc
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.pdb
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.dll
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\bin\Debug\netcoreapp2.1\CAMDBScreen.Views.pdb
-C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csprojAssemblyReference.cache
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfoInputs.cache
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.AssemblyInfo.cs
 C:\Users\User\Documents\ProjectCAMDB\CAMDBScreen\obj\Debug\netcoreapp2.1\CAMDBScreen.csproj.CoreCompileInputs.cache
